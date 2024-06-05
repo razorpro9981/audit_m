@@ -389,7 +389,7 @@ function DTable() {
               <FilterGroup onFilter={applyFilter} />
             </div>
             <br></br>
-            <div className="mx-7 border-2"></div>
+            {/* <div className="mx-7 border-2"></div> */}
             <Table
               columns={columns}
               dataSource={filteredData.length > 0 ? filteredData : tableData}

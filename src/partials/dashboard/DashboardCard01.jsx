@@ -118,6 +118,38 @@ function DashboardCard01() {
 
   const [dummy, setDummy] = useState(0);
 
+  const chartOptions = {
+    tooltips: {
+      callbacks: {
+        label: function (tooltipItem, data) {
+          return tooltipItem.yLabel;
+        },
+      },
+    },
+    hover: {
+      mode: "nearest",
+      intersect: true,
+    },
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: "Date",
+        },
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: "Logon Counts",
+        },
+      },
+    },
+  };
+
+  //render chart on page load
+
   return (
     <div className="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white dark:bg-slate-800 shadow-lg rounded-sm border border-slate-200 dark:border-slate-700">
       <div className="px-5 pt-5">
@@ -166,7 +198,12 @@ function DashboardCard01() {
         </div>
       </div>
       <div className="grow max-sm:max-h-[128px] max-h-[128px]">
-        <LineChart data={chartData} width={389} height={128} />
+        <LineChart
+          data={chartData}
+          options={chartOptions}
+          width={389}
+          height={128}
+        />
       </div>
     </div>
   );

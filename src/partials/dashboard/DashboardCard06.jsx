@@ -89,7 +89,12 @@ function DashboardCard06() {
       </header>
       {/* Chart built with Chart.js 3 */}
       {/* Change the height attribute to adjust the chart height */}
-      <DoughnutChart data={chartData} width={389} height={260} key={JSON.stringify(chartData)} />
+      <DoughnutChart
+        data={chartData}
+        width={370}
+        height={250}
+        key={JSON.stringify(chartData)}
+      />
     </div>
   );
 }

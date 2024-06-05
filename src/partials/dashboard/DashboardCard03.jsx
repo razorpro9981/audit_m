@@ -176,7 +176,7 @@ function DashboardCard03() {
           const date = formatDate(entry.EVENT_TIMESTAMP.split("T")[0]);
           const action = entry.ACTION_NAME;
 
-          if (action === "ALTER TABLE") {
+          if (action === "CREATE PROCEDURE") {
             if (!loggedDatesSet.has(date)) {
               loggedDatesSet.add(date);
               logonCountsObj[date] = 1;
@@ -261,7 +261,7 @@ function DashboardCard03() {
           </EditMenu>
         </header> */}
         <h2 className="text-lg font-semibold text-slate-800 dark:text-slate-100 mb-2">
-          Tables Altered
+          Procedures Created
         </h2>
         <div className="text-xs font-semibold text-slate-400 dark:text-slate-500 uppercase mb-1">
           Last 30 Days
