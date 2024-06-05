@@ -116,7 +116,7 @@ function RealtimeChart({
     } else {
       chartDeviation.current.style.backgroundColor = tailwindConfig().theme.colors.emerald[500];
     }
-    chartDeviation.current.innerHTML = `${diff > 0 ? '+' : ''}${diff.toFixed(2)}%`;
+    chartDeviation.current.innerHTML = `{diff > 0 ? '+' : ''}{diff.toFixed(2)}%`;
   }, [data]);
 
   useEffect(() => {

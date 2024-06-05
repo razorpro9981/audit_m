@@ -6,7 +6,7 @@ import Highlighter from "react-highlight-words";
 import moment from "moment";
 import { EyeOutlined } from "@ant-design/icons";
 import { Modal, Col, Row } from "antd";
-import { format } from "sql-formatter";
+// import { format } from "sql-formatter";
 import FilterGroup from "../components/filterGroup";
 import Swal from "sweetalert2";
 import Sidebar from "../partials/Sidebar";
@@ -386,9 +386,10 @@ function DTable() {
           </div>
           <div className="p-2 m-2 ">
             <div className="w-full">
-              {/* <FilterGroup onFilter={applyFilter} /> */}
+              <FilterGroup onFilter={applyFilter} />
             </div>
-            {/* <div className="mx-7 border-2"></div> */}
+            <br></br>
+            <div className="mx-7 border-2"></div>
             <Table
               columns={columns}
               dataSource={filteredData.length > 0 ? filteredData : tableData}

@@ -72,8 +72,8 @@ function DropdownNotifications({
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2">📣 <span className="font-medium text-slate-800 dark:text-slate-100">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
-                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Feb 12, 2021</span>
+                <span className="block text-sm mb-2">📣 <span className="font-medium text-slate-800 dark:text-slate-100">Edit your information in a swipe</span>  No new Notifications.</span>
+                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Feb 12, 2024</span>
               </Link>
             </li>
             <li className="border-b border-slate-200 dark:border-slate-700 last:border-0">
@@ -82,8 +82,8 @@ function DropdownNotifications({
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2">📣 <span className="font-medium text-slate-800 dark:text-slate-100">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
-                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Feb 9, 2021</span>
+                <span className="block text-sm mb-2">📣 <span className="font-medium text-slate-800 dark:text-slate-100">Edit your information in a swipe</span>  No new Notifications.</span>
+                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Feb 9, 2024</span>
               </Link>
             </li>
             <li className="border-b border-slate-200 dark:border-slate-700 last:border-0">
@@ -92,8 +92,8 @@ function DropdownNotifications({
                 to="#0"
                 onClick={() => setDropdownOpen(!dropdownOpen)}
               >
-                <span className="block text-sm mb-2">🚀<span className="font-medium text-slate-800 dark:text-slate-100">Say goodbye to paper receipts!</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
-                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Jan 24, 2020</span>
+                <span className="block text-sm mb-2">🚀<span className="font-medium text-slate-800 dark:text-slate-100">Say goodbye to paper receipts!</span> No new Notifications.</span>
+                <span className="block text-xs font-medium text-slate-400 dark:text-slate-500">Jun 06, 2024</span>
               </Link>
             </li>
           </ul>
